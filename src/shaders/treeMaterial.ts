@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { shaderMaterial } from '@react-three/drei';
-import { extend, Object3DNode } from '@react-three/fiber';
+import { extend } from '@react-three/fiber';
 import React from 'react';
 
 // --- Tree Material (Existing) ---
@@ -133,14 +133,6 @@ extend({ TreeMaterial, StarMaterial });
 
 // Export for usage in TS
 export { TreeMaterial, StarMaterial };
-
-// Type declaration for TSX
-declare module '@react-three/fiber' {
-  interface ThreeElements {
-    treeMaterial: Object3DNode<THREE.ShaderMaterial, typeof TreeMaterial>;
-    starMaterial: Object3DNode<THREE.ShaderMaterial, typeof StarMaterial>;
-  }
-}
 
 declare global {
   namespace JSX {
