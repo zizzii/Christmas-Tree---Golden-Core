@@ -1,0 +1,7 @@
+{
+  "name": "Golden Core - Christmas Tree",
+  "description": "A cinematic, shader-based particle system morphing between a golden spiral tree and a chaotic sphere.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
